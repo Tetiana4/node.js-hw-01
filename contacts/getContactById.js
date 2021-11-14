@@ -1,4 +1,4 @@
-const { listContacts } = require("./listContacts");
+const listContacts = require("./listContacts");
 
 const getContactById = async (id) => {
   const contacts = await listContacts();
@@ -9,4 +9,4 @@ const getContactById = async (id) => {
   return result;
 };
 
-module.exports = { getContactById };
+module.exports = getContactById;

@@ -1,6 +1,6 @@
 const fs = require("fs/promises");
 const path = require("path");
-const { listContacts } = require("./listContacts");
+const listContacts = require("./listContacts");
 
 const contactsPath = path.resolve("");
 
@@ -18,4 +18,4 @@ const removeContactById = async (id) => {
   return removeContact;
 };
 
-module.exports = { removeContactById };
+module.exports = removeContactById;

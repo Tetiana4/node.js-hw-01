@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs/promises");
-const { listContacts } = require("./listContacts");
+const listContacts = require("./listContacts");
 
 const contactsPath = path.resolve("");
 
@@ -18,4 +18,4 @@ const updateContactById = async (id, data) => {
   return contacts[idx];
 };
 
-module.exports = { updateContactById };
+module.exports = updateContactById;

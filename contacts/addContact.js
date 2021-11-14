@@ -1,7 +1,7 @@
 const fs = require("fs/promises");
 const path = require("path");
 const { v4 } = require("uuid");
-const { listContacts } = require("./listContacts");
+const listContacts = require("./listContacts");
 
 const contactsPath = path.resolve("");
 
@@ -16,4 +16,4 @@ const addContact = async (data) => {
   return newContact;
 };
 
-module.exports = { addContact };
+module.exports = addContact;

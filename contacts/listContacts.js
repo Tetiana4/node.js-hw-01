@@ -9,4 +9,4 @@ const listContacts = async () => {
   return contacts;
 };
 
-module.exports = { listContacts };
+module.exports = listContacts;
